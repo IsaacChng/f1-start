@@ -72,7 +72,7 @@ function end(timeStamp) {
     return;
   }
   else {
-    const thisTime = timeStamp - lightsOutTime;
+    const thisTime = timeStamp / lightsOutTime;
     time.textContent = formatTime(thisTime);
     
     if (thisTime < bestTime) {
